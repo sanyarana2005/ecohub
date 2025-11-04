@@ -55,7 +55,7 @@ const Landing = () => {
               Smart Solutions for a Greener Tomorrow
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Explore, play, and take real action with EcoVerse — your all-in-one platform for sustainability. From immersive VR forests and gamified recycling to e-waste tracking and community challenges, EcoVerse turns everyday eco-actions into an inspiring, interactive experience.
+              Explore, play, and take real action with Greenify — your all in one platform for sustainability. From immersive VR forests and gamified recycling to e-waste tracking and community challenges, Greenify turns everyday eco-actions into an inspiring, interactive experience.
             </p>
           </motion.div>
 
@@ -122,13 +122,13 @@ const Landing = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.5 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+              className="bg-blue-100 dark:bg-blue-900/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="text-5xl mb-4 text-center">🌍</div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
                 200K+ Eco Warriors Joined
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+              <p className="text-sm text-gray-700 dark:text-gray-200 leading-relaxed text-center">
                 Together we're building a resilient, greener planet — one small action at a time.
               </p>
             </motion.div>
@@ -140,14 +140,14 @@ const Landing = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+              className="bg-green-100 dark:bg-green-900/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="text-5xl mb-4 text-center">♻️</div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
                 Join us in reshaping the future of sustainability.
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center">
-                Play, recycle, and grow — every mission in EcoVerse helps the real world breathe easier.
+              <p className="text-sm text-gray-700 dark:text-gray-200 leading-relaxed text-center">
+                Play, recycle, and grow — every mission in Greenify helps the real world breathe easier.
               </p>
             </motion.div>
 
@@ -158,13 +158,13 @@ const Landing = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.5 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+              className="bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="text-5xl mb-4 text-center">🌳</div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
                 No Future Without Nature.
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+              <p className="text-sm text-gray-700 dark:text-gray-200 leading-relaxed text-center">
                 Step into the VR Forest Trail, explore biodiversity, and see how your actions restore ecosystems.
               </p>
             </motion.div>
@@ -176,13 +176,13 @@ const Landing = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+              className="bg-lime-100 dark:bg-lime-900/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all"
             >
               <div className="text-5xl mb-4 text-center">🌿</div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
                 Innovate for Earth.
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+              <p className="text-sm text-gray-700 dark:text-gray-200 leading-relaxed text-center">
                 Empower communities, reduce e-waste, and make climate resilience a shared reality.
               </p>
             </motion.div>
@@ -218,7 +218,7 @@ const Landing = () => {
               className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
             >
               <p>
-                Find the property you need with Greenify. From dream homes and modern apartments to commercial properties, Greenify provides the best solutions for sustainable living and agricultural innovation.
+                Greenify transforms climate awareness into action through immersive VR forests, fun recycling games, and e-waste tracking. It connects users with local eco-communities, inspiring small steps that create a smarter, cleaner, and more resilient planet.
               </p>
             </motion.div>
           </div>

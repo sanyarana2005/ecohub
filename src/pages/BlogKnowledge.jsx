@@ -147,10 +147,7 @@ const BlogKnowledge = () => {
   // Combine news articles and user blog posts
   const allPosts = [...newsArticles, ...blogPosts];
 
-  const filteredPosts =
-    selectedFilter === 'all'
-      ? allPosts
-      : allPosts.filter((post) => post.category === selectedFilter);
+  const filteredPosts = allPosts;
 
   const [newPost, setNewPost] = useState({
     title: '',
@@ -204,31 +201,6 @@ const BlogKnowledge = () => {
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Stay updated with the latest GreenTech and climate resilience news, and share your own experiences.
           </p>
-        </motion.div>
-
-        {/* Filter Chips */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="flex items-center gap-4 mb-8 flex-wrap"
-        >
-          <Filter className="text-gray-600 dark:text-gray-400" size={24} />
-          {filters.map((filter) => (
-            <motion.button
-              key={filter.id}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setSelectedFilter(filter.id)}
-              className={`px-4 py-2 rounded-full font-semibold text-sm transition-all ${
-                selectedFilter === filter.id
-                  ? 'bg-green text-white shadow-lg'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
-              }`}
-            >
-              {filter.label}
-            </motion.button>
-          ))}
         </motion.div>
 
         {/* Write Blog Button */}
