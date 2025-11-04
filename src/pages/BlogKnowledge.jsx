@@ -316,19 +316,20 @@ const BlogKnowledge = () => {
         {/* Write Blog Modal */}
         <AnimatePresence>
           {showModal && (
-            <>
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={() => setShowModal(false)}
-                className="fixed inset-0 bg-black/50 z-50 backdrop-blur-sm"
+                className="absolute inset-0 bg-black/50 backdrop-blur-sm"
               />
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-2xl bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 max-h-[90vh] overflow-y-auto"
+                onClick={(e) => e.stopPropagation()}
+                className="relative z-50 w-full max-w-2xl bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 max-h-[90vh] overflow-y-auto"
               >
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Write a Blog</h2>
@@ -397,7 +398,7 @@ const BlogKnowledge = () => {
                   </motion.button>
                 </form>
               </motion.div>
-            </>
+            </div>
           )}
         </AnimatePresence>
       </div>
